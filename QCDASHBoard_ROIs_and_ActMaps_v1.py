@@ -5,8 +5,6 @@
 
 import os
 import numpy as np
-import numpy.matlib
-import glob
 
 # DASH
 import dash
@@ -16,7 +14,6 @@ import dash_core_components as dcc
 from dash.dependencies import Input, Output, State, ALL
 import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
-import dash_table
 
 # MY FUNCTIONS 
 from DASH_png_feeder import DASH_png_feeder
