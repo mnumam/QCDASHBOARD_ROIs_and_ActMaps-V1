@@ -1,3 +1,4 @@
 dash==2.6.1
+dash-bootstrap-components
 numpy
 gunicorn
