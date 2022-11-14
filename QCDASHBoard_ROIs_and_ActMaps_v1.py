@@ -9,10 +9,9 @@ import numpy as np
 # DASH
 import dash
 from dash import ctx
-import dash_html_components as html
+from dash import html, dcc
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State, ALL
-import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
 
 # MY FUNCTIONS 
