@@ -9,7 +9,7 @@ import numpy as np
 # DASH
 import dash
 from dash import ctx
-from dash import html, dcc
+from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State, ALL
 from dash.exceptions import PreventUpdate
@@ -286,7 +286,7 @@ def func(n_clicks, text):
     return dict(content='\n{}'.format(text), filename=f"QC_BrainPlasticity_ROIs_{date_time}.txt")
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
     
 # In[ ]:
 
