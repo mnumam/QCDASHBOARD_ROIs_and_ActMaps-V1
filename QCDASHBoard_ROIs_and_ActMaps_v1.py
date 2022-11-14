@@ -3,7 +3,6 @@
 
 # In[1]:
 
-
 import os
 import numpy as np
 import numpy.matlib
@@ -16,7 +15,6 @@ import dash_html_components as html
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State, ALL
 import dash_bootstrap_components as dbc
-from jupyter_dash import JupyterDash
 from dash.exceptions import PreventUpdate
 import dash_table
 
@@ -86,7 +84,7 @@ subjects =  html.Div([dbc.RadioItems(options=[
 # In[23]:
 
 
-app = JupyterDash(__name__, update_title=None)
+app = Dash(__name__, update_title=None)
 r = []
 app.layout = html.Div([
     # HEADER
@@ -289,9 +287,9 @@ date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
 def func(n_clicks, text):
     return dict(content='\n{}'.format(text), filename=f"QC_BrainPlasticity_ROIs_{date_time}.txt")
 
-app.run_server(mode ="external", debug=True)             
-
-
+if __name__ == '__main__':
+    app.run_server(debug=True)
+    
 # In[ ]:
 
 
