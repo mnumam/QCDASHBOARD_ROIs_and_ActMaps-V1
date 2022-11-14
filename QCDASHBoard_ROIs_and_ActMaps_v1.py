@@ -85,6 +85,8 @@ subjects =  html.Div([dbc.RadioItems(options=[
 
 
 app = Dash(__name__, update_title=None)
+server = app.server
+
 r = []
 app.layout = html.Div([
     # HEADER
